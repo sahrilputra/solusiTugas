@@ -1,0 +1,128 @@
+.nav {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px;
+  position: sticky;
+  z-index: 99 !important;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    height: 40px;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 10px;
+  }
+  &__ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-weight: bold;
+    font-weight: 600;
+  }
+  &__menu {
+    display: none;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+  &__phone {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__innerHub {
+    display: none;
+  }
+}
+
+.nav__item:hover {
+  color: $primary;
+}
+.nav__item:first-child {
+  color: $primary;
+}
+@media screen and (max-width: 450px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__list.show {
+    display: block;
+  }
+  .nav {
+    &__contact {
+      display: none;
+    }
+    &__menu {
+      display: block;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    &__list {
+      position: absolute;
+      display: none;
+      right: 0;
+      background: #fff;
+      top: 60px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid #dedede;
+      box-shadow: 2.8px 2.8px 2.2px rgba(119, 95, 95, 0.014),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.017),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.02),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+    &__ul {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding: 12px;
+      font-size: 16px;
+    }
+    &__innerHub {
+      display: inline;
+      width: 80%;
+    }
+  }
+  .show {
+    display: block;
+  }
+
+  .hub_btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+// MOBILE RESPONSIVE
+
+@media only screen and (max-width: 767px) {
+}
+
+@media (max-width: 1023px) {
+  .icon_phone {
+    display: none;
+  }
+}

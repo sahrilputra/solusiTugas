@@ -1,0 +1,54 @@
+.card {
+  width: 260px;
+  height: 200px;
+  display: grid;
+  place-content: center;
+  font-family: $font;
+  //   border: 0.5px solid $primary;
+  border-radius: 12px;
+  box-shadow: -3.2px -4.6px 4.8px rgba(0, 0, 0, 0.05),
+    -8px -11.4px 13.4px rgba(0, 0, 0, 0.033),
+    29px 41.6px 32.3px rgba(0, 0, 0, 0.025),
+    58px 83px 107px rgba(0, 0, 0, 0.017);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    &__item {
+      display: flex;
+      flex-direction: row;
+    //   flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      h1 {
+        font-weight: bold;
+        font-size: 18px;
+        color: $primary;
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &__icon {
+      border-radius: 12px;
+      border: solid $primary 0.5px;
+      padding: 8px;
+      background-color: $primary;
+      color: #fff;
+    }
+    p {
+      padding: 8px;
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #2d2d2d;
+    }
+  }
+}
+
+
+.card:hover{
+  transform: scale(1.03);
+}

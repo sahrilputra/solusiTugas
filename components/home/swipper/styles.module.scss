@@ -1,0 +1,46 @@
+.swiper{
+    width: 220px;
+    background: #ffff;
+    border-radius: 12px;
+    padding: 12px;
+    color: #2d2d2d;
+    font-family: $font;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__text{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 16px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.icon{
+    color: $primary;
+    background: #2fbdff;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.mySwipper{
+    // overflow: hidden;
+    // z-index: 1 !important;
+    // width: 500px;
+    // display: flex;
+    // gap: 20px;
+}

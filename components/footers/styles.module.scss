@@ -1,0 +1,35 @@
+.footer{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: #212529;
+    position: relative;
+    &__container{
+        display: grid;
+        grid-template-columns: 0.2fr 1.8fr;
+        color: #fff;
+        place-items: center;
+        justify-content: space-between;
+    }
+
+    &__icon{
+        width: 200px;
+        height: max-content;
+        margin: 10px;
+        padding: 4px;
+        img{
+            width: 120px;
+            height: 80px;
+            object-fit: contain;
+        }
+    }
+
+    &__items{
+        text-align: right;
+        position: relative;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        padding: 14px;
+    }
+}

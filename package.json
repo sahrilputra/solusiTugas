@@ -1,0 +1,33 @@
+{
+  "name": "solusitugasku",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@material-tailwind/react": "^2.0.5",
+    "flowbite": "^1.7.0",
+    "flowbite-react": "^0.4.11",
+    "framer-motion": "^10.12.18",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-awesome-reveal": "^4.2.5",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "sass": "^1.63.6",
+    "scss": "^0.2.4",
+    "swiper": "^10.0.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "postcss": "^8.4.25",
+    "tailwindcss": "^3.3.2"
+  }
+}
