@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { GiSupersonicArrow } from "react-icons/gi"
 import { PiArrowUpRight, PiStudent, PiNotePencil, PiInstagramLogo, PiWhatsappLogoLight, PiWhatsappLogo, PiFacebookLogo } from 'react-icons/pi';
 import { OrderTimeline } from '../components/home/timeline';
-import { AiOutlineFieldTime } from 'react-icons/ai';
+import { AiOutlineFieldTime, AiOutlineTrophy, AiOutlineStar } from 'react-icons/ai';
 import { motion } from "framer-motion"
 import { Accordian } from '../components/home/accordian';
 import { Testimonials } from '../components/home/testimonials';
@@ -19,10 +19,11 @@ import { TestimoniSwipper } from '../components/home/testimonials/testimonialSwi
 import { Slide, Fade } from "react-awesome-reveal";
 import { BlogCard } from '../components/home/blogCard';
 import { Footers } from '../components/footers';
+
 export default function Home() {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
 
       <div className={`${styles.hero}`}>
         <div className={styles.hero__container}>
@@ -108,12 +109,12 @@ export default function Home() {
                     <p>Kami memastikan proses pengerjaan tugas berjalan dengan cepat dan efisien. Dengan pendekatan yang terstruktur dan tim yang terampil.</p>
                   </div>
                   <div className={styles.about__container__item}>
-                    <AiOutlineFieldTime size={30} />
+                    <AiOutlineTrophy size={30} />
                     <h3>Kulaitas Unggul</h3>
                     <p>Kami menjamin kualitas yang unggul dalam setiap tugas yang kami kerjakan. Dengan dedikasi dan keahlian tim kami</p>
                   </div>
                   <div className={styles.about__container__item}>
-                    <AiOutlineFieldTime size={30} />
+                    <AiOutlineStar size={30} />
                     <h3>Kepuasan Nilai</h3>
                     <p>Kepuasan nilai Anda adalah prioritas utama bagi kami. Kami berusaha keras untuk memberikan jawaban yang memenuhi standar yang diharapkan.</p>
                   </div>
@@ -190,7 +191,7 @@ export default function Home() {
             <div className={styles.add__container__text}>
               <div className="site-heading">
                 <h4>Masih Ragu ?</h4>
-                <h2 className=' text-3xl capitalize'>Lihat Kami Di Media Sosial Kami </h2>
+                <h2 className=' text-3xl capitalize'>Temui Kami Di Sosial Media Kami </h2>
                 <div className="devider" />
                 <div className={styles.add__container__text__socials}>
                   <Button className="mt-3 flex items-center gap-3">
@@ -205,7 +206,6 @@ export default function Home() {
                     <PiInstagramLogo size={20} />
                    INSTAGRAM
                   </Button>
-               
                 </div>
               </div>
             </div>

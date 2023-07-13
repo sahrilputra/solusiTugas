@@ -64,7 +64,7 @@ export const Nav = () => {
                     <Link href="#">HOME</Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="2">
-                    <Link href="#">Cara Order</Link>
+                    <Link href="orders">Cara Order</Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="3">
                     <Link href="#">Tugas</Link>
