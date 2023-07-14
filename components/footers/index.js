@@ -1,12 +1,9 @@
 import React from 'react'
-import { Typography } from "@material-tailwind/react";
 import styles from './styles.module.scss'
 import Image from 'next/image';
-import { Button } from 'flowbite-react';
 import Link from 'next/link';
-import { BsDribble, BsFacebook, BsGithub, BsInstagram, BsTwitter, BsWhatsapp } from 'react-icons/bs'
+import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 
-const currentYear = new Date().getFullYear();
 export const Footers = () => {
     return (
         <>

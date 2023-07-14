@@ -1,19 +1,27 @@
 .card{
     width: 300px;
-    height: 420px;
+    height: max-content;
+    padding: 10px;
     background-color: #fff;
     padding: 3px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     &__img{
         width: 96%;
-        height: 250px;
+        height: 200px;
         margin: 6px;
         border-radius: 12px;
         background-color: #dedede;
+        img{
+            object-fit: cover;
+            border-radius: 12px;
+            width: 100%;
+            height: 100%;
+        }
     }
     &__date{
         position: relative;

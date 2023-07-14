@@ -51,7 +51,7 @@
     &__li {
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
       gap: 12px;
 
       h4 {
@@ -106,7 +106,7 @@
     }
     &__items{
         width: 80%;
-        justify-content: start;
+        justify-content: flex-start;
     }
     &__ul {
       grid-template-columns: 1fr 1fr;
