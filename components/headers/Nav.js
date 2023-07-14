@@ -31,6 +31,7 @@ export const Nav = () => {
       <nav className={`${styles.nav} shadow-lg`}>
         <div className={styles.nav__container}>
           <div className={styles.nav__logo}>
+            <Link href="/">
             <Image
               src="/logo.png"
               width={40}
@@ -38,6 +39,7 @@ export const Nav = () => {
               alt='logo'
               className=' m-3'
             />
+            </Link>
           </div>
 
 
@@ -61,16 +63,16 @@ export const Nav = () => {
                   transition={transition}
                 >
                   <motion.li className={styles.nav__item} key="1">
-                    <Link href="./">Home</Link>
+                    <Link href="./"><p>Home</p></Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="2">
-                    <Link href="orders">Cara Order</Link>
+                    <Link href="orders"><p>Order</p></Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="3">
-                    <Link href="tugas">Tugas</Link>
+                    <Link href="tugas"><p>Tugas</p></Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="4">
-                    <Link href="faq">Faq</Link>
+                    <Link href="faq"> <p>Faq</p> </Link>
                   </motion.li>
                 </motion.ul>
 

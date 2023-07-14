@@ -30,7 +30,7 @@ export const FloatIcons = () => {
 
                 <Link
                     className={styles.icons__link}
-                    href={"#"}
+                    href={"https://wasap.at/RJbAiR"}
                 >
                     <BsWhatsapp size={20} className={styles.icons__wa} />
                 </Link>
