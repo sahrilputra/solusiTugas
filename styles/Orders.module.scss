@@ -147,4 +147,10 @@
         align-items: center;
         text-align: center;
     }
+    .add {
+
+        &__container {
+            grid-template-columns: 1fr;
+        }
+    }
 }

@@ -69,6 +69,9 @@ export const Nav = () => {
                   <motion.li className={styles.nav__item} key="3">
                     <Link href="tugas">Tugas</Link>
                   </motion.li>
+                  <motion.li className={styles.nav__item} key="4">
+                    <Link href="faq">Faq</Link>
+                  </motion.li>
                 </motion.ul>
 
 

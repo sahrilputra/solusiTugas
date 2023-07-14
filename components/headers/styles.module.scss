@@ -52,6 +52,9 @@
 .nav__item:first-child {
   color: $primary;
 }
+
+
+
 @media screen and (max-width: 450px) {
   .nav__list {
     display: none;
@@ -118,7 +121,10 @@
 
 // MOBILE RESPONSIVE
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 630px) {
+  .nav__contact{
+    display: none;
+  }
 }
 
 @media (max-width: 1023px) {
