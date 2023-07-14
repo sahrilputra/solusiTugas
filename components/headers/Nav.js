@@ -66,13 +66,16 @@ export const Nav = () => {
                     <Link href="./"><p>Home</p></Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="2">
-                    <Link href="orders"><p>Order</p></Link>
+                    <Link href="/orders"><p>Order</p></Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="3">
-                    <Link href="tugas"><p>Tugas</p></Link>
+                    <Link href="/tugas"><p>Tugas</p></Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="4">
-                    <Link href="faq"> <p>Faq</p> </Link>
+                    <Link href="/faq"> <p>Faq</p> </Link>
+                  </motion.li>
+                  <motion.li className={styles.nav__item} key="5">
+                    <Link href="/blog"> <p>Blog</p> </Link>
                   </motion.li>
                 </motion.ul>
 

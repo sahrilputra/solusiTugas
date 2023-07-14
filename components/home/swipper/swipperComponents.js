@@ -12,7 +12,7 @@ import { MySwipper } from './swipper';
 
 import {
   PiPresentationChartLight,
-  PiNewspaper, PiNewspaperClipping, 
+  PiNewspaper, PiNewspaperClipping,
   PiPencilSimpleLine, PiBookOpenLight
 } from "react-icons/pi";
 
@@ -21,28 +21,11 @@ export const SwipperComponents = () => {
     <>
 
       <Swiper
-        spaceBetween={160}
-        slidesPerView={1}
-        centeredSlides={true}
+        spaceBetween={30}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-          },
-          1025: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-        }}
-
         navigation={true}
         modules={[Autoplay, Navigation]}
         className="mySwiper"

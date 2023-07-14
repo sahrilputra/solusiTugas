@@ -21,26 +21,23 @@ export const Footers = () => {
                         <ul className={styles.footer__ul}>
                             <li className={styles.footer__ul__li}>
                                 <h4>Home</h4>
-                                <Link href="#">
+                                <Link href="/orders">
                                     <p>Cara Order</p>
                                 </Link>
-                                <Link href="#">
+                                <Link href="/tugas">
                                     <p>Tugas</p>
                                 </Link>
                             </li>
                             <li className={styles.footer__ul__li}>
                                 <h4>Tentang</h4>
-                                <Link href="#">
+                                <Link href="/">
                                     <p>Tentang Kami</p>
-                                </Link>
-                                <Link href="#">
-                                    <p>Kontak</p>
                                 </Link>
                             </li>
                             <li className={styles.footer__ul__li}>
                                 <h4>Blog</h4>
-                                <Link href="#">
-                                    <p>Blog 1</p>
+                                <Link href="/blog">
+                                    <p>Blog Page</p>
                                 </Link>
                             </li>
 
@@ -52,7 +49,7 @@ export const Footers = () => {
                     <p className=' text-white text-center'>© 2023 Solusi Tugasku™</p>
 
                     <div className={styles.footer__socials}>
-                        <Link href="#">
+                        <Link href="https://wasap.at/RJbAiR">
                             <BsWhatsapp size={20} />
                         </Link>
                         <Link href="#">

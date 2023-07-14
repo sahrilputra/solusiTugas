@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import { Button } from "@material-tailwind/react";
+import Link from 'next/link';
 import { Nav } from '../components/headers/Nav';
 import { SwipperComponents } from '../components/home/swipper/swipperComponents';
 import { CardItems } from '../components/home/card';
@@ -17,7 +18,7 @@ import { Accordian } from '../components/home/accordian';
 import { Testimonials } from '../components/home/testimonials';
 import { TestimoniSwipper } from '../components/home/testimonials/testimonialSwiper';
 import { Slide, Fade } from "react-awesome-reveal";
-import { BlogCard } from '../components/home/blogCard';
+import { BlogStatic } from '../components/home/blogCard';
 import { Footers } from '../components/footers';
 import { FloatIcons } from '../components/floatingIcon';
 import { MaterialFooter } from '../components/footers/material'
@@ -121,9 +122,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button>
-                Konsultasi Sekarang
-              </Button>
+              <Link href="https://wasap.at/RJbAiR">
+                <Button>
+                  Konsultasi Sekarang
+                </Button>
+              </Link>
             </div>
             <div className={styles.about__container__right}>
               <img src="../../figure/target.png" alt="" />
@@ -160,10 +163,10 @@ export default function Home() {
                   Lihat apa yang mereka katakan tentang pengalaman mereka menggunakan
                   jasa joki tugas kami!
                 </p>
-                <Button className="mx-auto mt-5 flex items-center justify-center gap-3">
+                {/* <Button className="mx-auto mt-5 flex items-center justify-center gap-3">
                   <PiArrowUpRight />
                   Lihat Lainya
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -177,8 +180,12 @@ export default function Home() {
             </div>
 
             <div className={styles.testi__blog__container}>
-              <BlogCard />
-              <BlogCard />
+              <Link href="/blog/test">
+              <BlogStatic Title={'10 Prinsip Akuntansi yang Harus Diketahui oleh Pemula'} image={'/blog/prinsip.jpg'} Tanggal={'14 Juli, 2023'} Penulis={'Sahril'} Sub={"Jika Anda seorang pemula yang ingin mempelajari akuntansi, ada beberapa prinsip dasar yang penting untuk Anda ketahui."} />
+              </Link>
+              <Link href="/blog/tips_mengelola_keuangan">
+              <BlogStatic Title={'Tips dan Strategi Jitu Mengelola Keuangan Pribadi dengan Bijak'} image={"/blog/coins.jpg"} Tanggal={'14 Juli, 2023'} Penulis={'Admin'} Sub={"Mengelola keuangan dengan bijak adalah langkah awal yang penting untuk mencapai stabilitas keuangan jangka panjang."} />
+              </Link>
             </div>
           </div>
         </div>
