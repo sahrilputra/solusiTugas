@@ -19,11 +19,12 @@ import { TestimoniSwipper } from '../components/home/testimonials/testimonialSwi
 import { Slide, Fade } from "react-awesome-reveal";
 import { BlogCard } from '../components/home/blogCard';
 import { Footers } from '../components/footers';
-
+import { FloatIcons } from '../components/floatingIcon';
+import { MaterialFooter } from '../components/footers/material'
 export default function Home() {
   return (
     <>
-      {/* <Nav /> */}
+
 
       <div className={`${styles.hero}`}>
         <div className={styles.hero__container}>
@@ -159,7 +160,7 @@ export default function Home() {
                   Lihat apa yang mereka katakan tentang pengalaman mereka menggunakan
                   jasa joki tugas kami!
                 </p>
-                <Button className="mt-3 flex items-center gap-3">
+                <Button className="mx-auto mt-5 flex items-center justify-center gap-3">
                   <PiArrowUpRight />
                   Lihat Lainya
                 </Button>
@@ -204,7 +205,7 @@ export default function Home() {
                   </Button>
                   <Button className="mt-3 flex items-center gap-3">
                     <PiInstagramLogo size={20} />
-                   INSTAGRAM
+                    INSTAGRAM
                   </Button>
                 </div>
               </div>
@@ -212,8 +213,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <Footers /> */}
     </>
   )
 }

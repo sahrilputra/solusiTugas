@@ -61,33 +61,37 @@ export const Nav = () => {
                   transition={transition}
                 >
                   <motion.li className={styles.nav__item} key="1">
-                    <Link href="#">HOME</Link>
+                    <Link href="./">Home</Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="2">
                     <Link href="orders">Cara Order</Link>
                   </motion.li>
                   <motion.li className={styles.nav__item} key="3">
-                    <Link href="#">Tugas</Link>
+                    <Link href="tugas">Tugas</Link>
                   </motion.li>
                 </motion.ul>
 
 
                 <div className={styles.nav__innerHub}>
-                  <Button className={styles.hub_btn}>
-                    <FaPhoneAlt /> Konsultasi Sekarang
-                  </Button>
+                  <Link href="https://wasap.at/RJbAiR">
+                    <Button className={styles.hub_btn}>
+                      <FaPhoneAlt /> Konsultasi Sekarang
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
           </AnimatePresence>
 
-          <div className={styles.nav__contact}>
-            <FaPhoneAlt size={35} className={styles.icon_phone} />
-            <div className={styles.nav__phone}>
-              <p>Mulai Konsultasi </p>
-              <p className=' text-sm font-thin'>+62000</p>
+          <Link href="https://wasap.at/RJbAiR">
+            <div className={styles.nav__contact}>
+              <FaPhoneAlt size={35} className={styles.icon_phone} />
+              <div className={styles.nav__phone}>
+                <p>Mulai Konsultasi </p>
+                <p className=' text-sm font-thin'>+62 8222 9903 963</p>
+              </div>
             </div>
-          </div>
+          </Link>
 
           <div className={styles.nav__menu}>
             <Button variant='outlined' size='sm' onClick={onClicked}>

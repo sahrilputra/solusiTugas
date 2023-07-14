@@ -1,0 +1,32 @@
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99 !important;
+  bottom: 30px;
+  right: 40px;
+  p {
+    width: auto;
+    background-color: #25d366;
+    padding: 12px;
+    color: #fff;
+    font-family: $font;
+    font-weight: 600;
+    border-radius: 12px;
+  }
+  &__wa {
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    background-color: #25d366;
+    border-radius: 50%;
+    color: #fff;
+    object-fit: contain;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+  }
+}
