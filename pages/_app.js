@@ -3,6 +3,8 @@ import { ThemeProvider } from "@material-tailwind/react";
 import { Nav } from '../components/headers/Nav';
 import { FloatIcons } from '../components/floatingIcon';
 import { Footers } from '../components/footers';
+import { Analytics } from '@vercel/analytics/react';
+
 import Head from 'next/head';
 function MyApp({ Component, pageProps }) {
   return (
@@ -18,7 +20,7 @@ function MyApp({ Component, pageProps }) {
       <Nav />
       <FloatIcons />
       <Component {...pageProps} />
-
+      <Analytics />
       <Footers />
     </ThemeProvider>
   )
